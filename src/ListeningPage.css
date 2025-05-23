@@ -1,0 +1,137 @@
+    .container {
+        padding: 24px;
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .tech-easy-text {
+        /* border: 2px solid #4caf50; */
+        border-radius: 16px;
+        padding: 12px;
+        background-color: lavender;
+        color: black;
+        font-size: 14px;
+        line-height: 1.5;
+        text-align: center; /* canh giữa ngang */
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .hero img {
+        max-width: 400px;
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .hero p {
+        margin-top: 12px;
+        color: #333;
+    }
+
+    .hero span {
+        color: #0070f3;
+    }
+
+    .categories {
+        margin-top: 40px;
+    }
+
+    .category-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .category-button {
+        background-color: gainsboro;
+        color: #111;
+        padding: 8px 20px;
+        border-radius: 9999px;
+        font-weight: 500;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .category-button:hover {
+        background-color: lightgreen;
+    }
+
+    .category-button.active {
+        background-color: limegreen;
+        /* Màu nền xanh nhạt */
+        color: #111;
+        /* Màu chữ đen */
+        font-weight: 500;
+    }
+
+
+    .cards {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+    
+    @media (max-width: 900px) {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width: 600px) {
+        .cards {
+            grid-template-columns: 1fr;
+        }
+    }
+    
+
+    .card {
+        border: 1px solid #eee;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+    }
+
+    .card-content {
+        padding: 16px;
+    }
+
+    .card-meta {
+        font-size: 12px;
+        color: #666;
+        margin-bottom: 4px;
+    }
+
+    .fade-in {
+        animation: fadeInUp 0.6s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fade-in {
+        animation: fadeInUp 0.5s ease-in-out;
+    }
